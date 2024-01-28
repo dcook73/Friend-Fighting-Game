@@ -14,13 +14,10 @@ public class P1HealthBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButtonDown(0))
-        {
-            TakeDamage();
-        }
+      
 	}
 
-    void TakeDamage()
+    public void TakeDamage()
     {
         currentHp -= 5;
         transform.localScale = new Vector3((currentHp / TotalHp), 1, 1);

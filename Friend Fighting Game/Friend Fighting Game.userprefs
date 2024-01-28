@@ -1,10 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Utilities\IntroSceneManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MainMenu.cs">
     <Files>
-      <File FileName="Assets\Scripts\SelectScreenManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MySceneManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Utilities\IntroSceneManager.cs" Line="15" Column="12" />
+      <File FileName="Assets\Scripts\Player1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\P1HealthBar.cs" Line="8" Column="25" />
+      <File FileName="Assets\Scripts\P2HealthBar.cs" Line="5" Column="16" />
+      <File FileName="Assets\Scripts\Player2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerSelectManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MainMenu.cs" Line="48" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

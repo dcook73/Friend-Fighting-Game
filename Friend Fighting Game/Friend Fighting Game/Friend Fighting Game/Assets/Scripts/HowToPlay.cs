@@ -26,7 +26,8 @@ public class HowToPlay : MonoBehaviour {
 		GUI.Label (new Rect (Screen.width / 2 - 570, 230, 2000, 1000), "D: Move character right");
 		GUI.Label (new Rect (Screen.width / 2 - 570, 270, 2000, 1000), "R: Punch");
 		GUI.Label (new Rect (Screen.width / 2 - 570, 310, 2000, 1000), "F: Kick");
-		GUI.Label (new Rect (Screen.width / 2 - 570, 350, 2000, 1000), "Q: Special Ability");
+		GUI.Label (new Rect (Screen.width / 2 - 570, 350, 2000, 1000), "S: Block");
+		//GUI.Label (new Rect (Screen.width / 2 - 570, 390, 2000, 1000), "Q: Special Ability");
 
 		GUI.skin.label.fontSize = 23;
 		GUI.contentColor = otherTitle;
@@ -35,7 +36,8 @@ public class HowToPlay : MonoBehaviour {
 		GUI.Label (new Rect (Screen.width / 2 + 90, 230, 2000, 1000), "L: Move character right");
 		GUI.Label (new Rect (Screen.width / 2 + 90, 270, 2000, 1000), "Y: Punch");
 		GUI.Label (new Rect (Screen.width / 2 + 90, 310, 2000, 1000), "H: Kick");
-		GUI.Label (new Rect (Screen.width / 2 + 90, 350, 2000, 1000), "P: Special Ability");
+		GUI.Label (new Rect (Screen.width / 2 + 90, 350, 2000, 1000), "K: Block");
+		//GUI.Label (new Rect (Screen.width / 2 + 90, 390, 2000, 1000), "P: Special Ability");
 
 		GUI.skin.button.fontSize = 12;
 		GUI.contentColor = buttonColor;

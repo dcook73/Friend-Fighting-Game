@@ -35,16 +35,17 @@ public class MainMenu : MonoBehaviour {
 		GUI.contentColor = otherTitle;
 		GUI.Label (new Rect (Screen.width / 2 + 320, 95, 2000, 1000), "ame");
 
-		GUI.skin.button.fontSize = 12;
+		/*GUI.skin.button.fontSize = 12;
 		GUI.contentColor = buttonColor;
 		if (GUI.Button (new Rect (Screen.width / 2 - 100, Screen.height / 2 - 100, 175, 40), "1 Player")){
 			Application.LoadLevel ("startSinglePlayer");
-		}
+		}*/
 
 		GUI.skin.button.fontSize = 12;
 		GUI.contentColor = buttonColor;
-		if (GUI.Button (new Rect (Screen.width / 2 - 100, Screen.height / 2 - 50, 175, 40), "2 Players")){
+		if (GUI.Button (new Rect (Screen.width / 2 - 100, Screen.height / 2 - 50, 175, 40), "FRIEND")){
 			//	Application.LoadLevel ("level 1");
+			Application.LoadLevel("PlayerSelect");
 		}
 
 		GUI.skin.button.fontSize = 12;

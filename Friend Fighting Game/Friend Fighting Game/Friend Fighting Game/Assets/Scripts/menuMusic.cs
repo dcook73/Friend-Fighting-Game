@@ -20,13 +20,13 @@ public class menuMusic : MonoBehaviour {
 	}
 
 	void Update(){
-		if (Application.loadedLevelName == "Knuckles") {
+		/*if (Application.loadedLevelName == "Knuckles") {
 			Destroy (this.gameObject);
 		}
 		if (Application.loadedLevelName == "Level 1") {
 			Destroy (this.gameObject);
-		}
-		if (Application.loadedLevelName == "Level 2") {
+		}*/
+		if (Application.loadedLevelName == "PlayerSelect") {
 			Destroy (this.gameObject);
 		}
 	}

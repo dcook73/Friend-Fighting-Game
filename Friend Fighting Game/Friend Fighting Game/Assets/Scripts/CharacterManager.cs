@@ -1,120 +1,80 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
-public class CharacterManager : MonoBehaviour {
+public class CharacterManager : MonoBehaviour
+{
+	public int numOfUsers;
 
-    public bool solo;
-    public int numberOfUsers;
-    public List<PlayerBase> players = new List<PlayerBase>(); //the list with all our players and player types
-    
-    //the list were we hold anything we need to know for each separate character,
-    //for now, it's their id and their corresponding prefab
-    public List<CharacterBase> characterList = new List<CharacterBase>();
+	//list of players and types
+	public List<PlayerBase> players = new List<PlayerBase>();
 
-    //we use this function to find characters from their id
+	public List<CharacterBase> characterList = new List<CharacterBase>();
+
 	public CharacterBase returnCharacterWithID(string id)
-    {
-        CharacterBase retVal = null;
+	{
+		CharacterBase retVal = null;
 
-        for (int i = 0; i < characterList.Count; i++)
-        {
-            if(string.Equals(characterList[i].charId,id))
-            {
-                retVal = characterList[i];
-                break;
-            }
-        }
+		for (int i = 0; i < characterList.Count; i++)
+		{
+			if (string.Equals(characterList[i].charId, id))
+			{
+				retVal = characterList[i];
+			}//ends if statement
+		}//ends for loop
+		return retVal;
+	}//ends CharacterBase method
 
-        return retVal;
-    }
+	public PlayerBase returnPlayerFromStates(StateManager states)
+	{
+		PlayerBase retVal = null;
 
-    //we use this one to return the player from his created character, states
-    public PlayerBase returnPlayerFromStates(StateManager states)
-    {
-        PlayerBase retVal = null;
+		for (int i = 0; i < players.Count; i++)
+		{
+			if (players[i].playerStates == states)
+			{
+				retVal = players[i];
+				break;
+			}//ends if statement
+		}//ends for loop
+		return retVal;
+	}//ends returnPlayerFromStates method
 
-        for (int i = 0; i < players.Count; i++)
-        {
-            if(players[i].playerStates == states)
-            {
-                retVal = players[i];
-                break;
-            }
-        }
+	public static CharacterManager instance;
+	public static CharacterManager GetInstance()
+	{
+		return instance;
+	}//ends GetInstance method
 
-        return retVal;
-    }
+	void Awake()
+	{
+		instance = this;
+		DontDestroyOnLoad(this.gameObject);
+	}//ends awake method
 
-    public PlayerBase returnOppositePlater(PlayerBase pl)
-    {
-        PlayerBase retVal = null;
-
-        for (int i = 0; i < players.Count; i++)
-        {
-            if (players[i] != pl)
-            {
-                retVal = players[i];
-                break;
-            }
-        }
-
-        return retVal;
-    }
-
-    public int ReturnCharacterInt(GameObject prefab)
-    {
-        int retVal = 0;
-
-        for (int i = 0; i < characterList.Count; i++)
-        {
-            if(characterList[i].prefab == prefab)
-            {
-                retVal = i;
-                break;
-            }
-        }
-
-        return retVal;
-    }
-
-    public static CharacterManager instance;
-    public static CharacterManager GetInstance()
-    {
-        return instance;
-    }
-
-    void Awake()
-    {
-        instance = this;
-        DontDestroyOnLoad(this.gameObject);
-    }
-
-}
+}//ends CharacterManager class
 
 [System.Serializable]
 public class CharacterBase
 {
-    public string charId;
-    public GameObject prefab;
-    public Sprite icon;
-}
+	public string charId;
+	public GameObject prefab;
+}//ends CharacterBase class
 
 [System.Serializable]
 public class PlayerBase
 {
-    public string playerId;
-    public string inputId;
-    public PlayerType playerType;
-    public bool hasCharacter;
-    public GameObject playerPrefab;
-    public StateManager playerStates;
-    public int score;
+	public string playerId;
+	public string inputId;
+	public PlayerType playerType;
+	public bool hasCharacter;
+	public GameObject playerPrefab;
+	public StateManager playerStates;
+	public int score;
 
-    public enum PlayerType
-    {
-        user, //it's a real human
-        ai,//skynet basically
-        simulation //for multiplayer over network, no, that's not a promise..
-    }
-}
+	public enum PlayerType
+	{
+		user,
+		ai
+	}//ends enum
+}//ends PlayerBase class

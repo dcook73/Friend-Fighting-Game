@@ -20,3 +20,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level 1.unity
     guid: 621d2bf29eb8bb449b7f12985a90095b
+  - enabled: 1
+    path: Assets/PlayerSelect.unity
+    guid: b2c49cd63b797cf45acee417aee62212
+  - enabled: 1
+    path: Assets/DaVSDe.unity
+    guid: 5e8c8347efc830644a895f6b72271738
+  - enabled: 1
+    path: Assets/DaVSJo.unity
+    guid: f1c26bc4e13e6d94da46f1ff60c089de
+  - enabled: 1
+    path: Assets/DeVSDa.unity
+    guid: 160f28d4e2f765d42aaca62ec018297a
+  - enabled: 1
+    path: Assets/DeVSJo.unity
+    guid: fb8707283628ed24f9617f3b65e467c8
+  - enabled: 1
+    path: Assets/JoVSDa.unity
+    guid: e6f00b3cc08668949977e0fb010af032
+  - enabled: 1
+    path: Assets/JoVSDe.unity
+    guid: e7de69ed6712c5941a6953e62d45fcf5

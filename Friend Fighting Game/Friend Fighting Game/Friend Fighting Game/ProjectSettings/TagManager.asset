@@ -7,9 +7,10 @@ TagManager:
   - Background
   - Foreground
   - Enemy
-  - Player 1
-  - Player 2
   - Music
+  - ground
+  - Player2
+  - Player1
   layers:
   - Default
   - TransparentFX

@@ -29,5 +29,8 @@ public class menuMusic : MonoBehaviour {
 		if (Application.loadedLevelName == "Level 2") {
 			Destroy (this.gameObject);
 		}
+		if (Application.loadedLevelName == "PlayerSelect") {
+			Destroy (this.gameObject);
+		}
 	}
 }
