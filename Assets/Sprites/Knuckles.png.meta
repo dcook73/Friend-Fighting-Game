@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: dc8bbf98d42645745b8b8c3651b8be00
+timeCreated: 1513724482
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Knuckles_Idle
+    21300002: Knuckles_Move
+    21300004: Knuckles_Jump
+    21300006: Knuckles_Hit
+    21300008: Knuckles_Punch
+    21300010: Knuckles_Kick
+    21300012: Knuckles_Special
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Knuckles_Idle
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 340
+        width: 183
+        height: 292
+      alignment: 9
+      pivot: {x: 0.5447775, y: 0.5229603}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knuckles_Move
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 343
+        width: 289
+        height: 292
+      alignment: 9
+      pivot: {x: 0.53350914, y: 0.51020455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knuckles_Jump
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 346
+        width: 189
+        height: 292
+      alignment: 9
+      pivot: {x: 0.52759045, y: 0.52551144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knuckles_Hit
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 343
+        width: 240
+        height: 292
+      alignment: 9
+      pivot: {x: 0.43792215, y: 0.42856765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knuckles_Punch
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 43
+        width: 294
+        height: 249
+      alignment: 9
+      pivot: {x: 0.37837774, y: 0.49999988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knuckles_Kick
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 28
+        width: 256
+        height: 292
+      alignment: 9
+      pivot: {x: 0.4883604, y: 0.54592067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Knuckles_Special
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 81
+        width: 317
+        height: 189
+      alignment: 9
+      pivot: {x: 0.5281996, y: 0.44481945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
